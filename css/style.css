@@ -35,10 +35,17 @@
 }
 
 body {
-    display: grid;
-    align-content: center;
+    display: flex;
     height: 100vh;
     background-color: var(--cream);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 620px;
+    margin: auto;
 }
 
 h1,
@@ -57,12 +64,7 @@ p {
     color: var(--darkgrayishblue);
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    max-width: 620px;
-    margin: auto;
-}
+
 
 img {
     width: 100%;
